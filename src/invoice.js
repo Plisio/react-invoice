@@ -118,10 +118,10 @@ const Invoice = ({ preLoading, invoice, cancelFetch }) => {
                 icon="icon_expired"
                 title="The order has not been fully paid"
               >
-                <p class="invoice__hint">We have received
-                  { formatCrypto((invoice.amount - invoice.pending_amount)) } { invoice.currency }
-                  of { invoice.amount } { invoice.currency } required.
-                  To get your payment back, please, contact support.
+                <p className="invoice__hint">{ `We have received
+                  ${ formatCrypto(invoice.amount - invoice.pending_amount) } ${ invoice.currency }
+                  of ${ invoice.amount } ${ invoice.currency } required.
+                  To get your payment back, please, contact support.` }
                 </p>
               </InvoiceStepResult>
 

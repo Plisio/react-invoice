@@ -1,7 +1,9 @@
 import React from 'react'
 
+import InvoiceSvgIcon from '../invoice-svg-icon'
+
 const InvoiceTxUrl = ({ txUrl }) => {
-  const txUrlToShow = txUrl === 'string'
+  const txUrlToShow = typeof txUrl === 'string'
     ? txUrl
     : txUrl[txUrl.length - 1]
 

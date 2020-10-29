@@ -64,7 +64,7 @@
     fill: $danger;
   }
 
-  a#{invoice}__txUrl {
+  a#{$invoice}__txUrl {
     display: inline-flex;
     align-items: center;
     margin-top: 1em;

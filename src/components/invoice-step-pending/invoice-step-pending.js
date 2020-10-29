@@ -1,7 +1,7 @@
 import React from 'react'
 import './invoice-step-pending.scss'
 import InvoiceSvgIcon from '../invoice-svg-icon'
-import InvoiceTxUrl from '../invoice-svg-icon'
+import InvoiceTxUrl from '../invoice-tx-url'
 
 const InvoiceStepPending = ({ invoice: { expected_confirmations, confirmations, txUrl } }) => {
   const confirmsRenderTo = [1, '1'].includes(expected_confirmations)
