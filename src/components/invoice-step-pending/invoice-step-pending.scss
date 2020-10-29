@@ -1,0 +1,21 @@
+@import '../../assets/styles/_variables.scss';
+@import '../../assets/styles/keyframes.scss';
+
+.step_pending {
+  &__icon_loader {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.5rem;
+    fill: $primary;
+    animation: rotate infinite 1s linear;
+    transform-origin: 50% 50%;
+  }
+
+  &__icon_link_external,
+  &__icon_bell {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
+    fill: $primary;
+  }
+}

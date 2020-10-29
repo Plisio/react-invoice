@@ -1,0 +1,64 @@
+@import '../../assets/styles/_variables.scss';
+
+.step_pay {
+  &__qr {
+    margin: $spacer auto 4*$spacer;
+  }
+
+  &__btn_copy {
+    cursor: pointer;
+  }
+
+  &__formGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    & + & {
+      margin-top: 1rem;
+    }
+  }
+
+  &__inputGroup {
+    flex-wrap: nowrap;
+    width: 100%;
+
+    &_prepend,
+    &_append {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      width: 50px;
+      min-height: 100%;
+      margin: 0;
+    }
+
+  }
+
+  &__input {
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    height: 40px;
+    padding: 0 .5rem;
+    border: 1px solid $gray_light_1;
+    border-radius: $border-radius;
+    outline: none;
+    font-size: 1rem;
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__icon_btn {
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    fill: $primary;
+    cursor: pointer;
+  }
+
+}

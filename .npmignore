@@ -1,0 +1,7 @@
+# .npmignore
+src
+examples
+mock.json
+.babelrc
+.gitignore
+webpack

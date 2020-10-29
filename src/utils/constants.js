@@ -1,0 +1,7 @@
+export const STATUS_NEW = 'new'
+export const STATUS_PENDING = 'pending'
+export const STATUS_MISMATCH = 'mismatch'
+export const STATUS_COMPLETED = 'completed'
+export const STATUS_EXPIRED = 'expired'
+export const STATUS_CANCELLED = 'cancelled'
+export const STATUS_ERROR = 'error'

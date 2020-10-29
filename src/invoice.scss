@@ -1,0 +1,92 @@
+@import './assets/styles/_variables.scss';
+@import './assets/styles/keyframes.scss';
+
+.invoice {
+  $invoice: &;
+
+  width: 100%;
+  max-width: 480px;
+  margin: 3*$spacer auto;
+  padding: 0;
+  border-radius: $border-radius;
+  box-shadow: 0 0 5px rgba(0,0,0,.25);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: $secondary;
+
+  a {
+    text-decoration: none;
+    color: $primary;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+  }
+
+  &__content {
+    padding: 2*$spacer $spacer 4*$spacer;
+  }
+
+  &__step {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__hint {
+    max-width: 80%;
+    margin: 0 auto 1em;
+  }
+
+  &__icon_expired,
+  &__icon_check {
+    width: 96px;
+    height: 96px;
+    fill: $primary;
+  }
+
+  &__icon_overpaid {
+    width: 66px;
+    height: 96px;
+    fill: $primary;
+  }
+
+  &__icon_exclamation {
+    width: 96px;
+    height: 96px;
+    fill: $danger;
+  }
+
+  a#{invoice}__txUrl {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1em;
+    text-decoration: none;
+    color: $primary;
+  }
+
+  &__icon_link_external {
+    width: 1em;
+    height: 1em;
+    margin-right: .5em;
+    fill: $primary;
+  }
+
+}
+
+.step_loading {
+  &__icon_loader {
+    width: 80px;
+    height: 80px;
+    fill: $primary;
+    animation: rotate infinite 1s linear;
+    transform-origin: 50% 50%;
+  }
+}

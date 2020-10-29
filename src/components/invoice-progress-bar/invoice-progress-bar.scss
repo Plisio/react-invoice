@@ -1,0 +1,36 @@
+@import '../../assets/styles/_variables.scss';
+
+.invoice {
+  &__progress {
+    position: relative;
+    height: 2rem;
+    background: $info;
+    border-radius: $border-radius $border-radius 0 0;
+  }
+
+  &__progressBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: $primary;
+    will-change: width;
+    transition: width 1s linear !important;
+  }
+
+  &__progressHint {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-shadow: 0 0 1px $black;
+    font-size: .75rem;
+    font-weight: 700;
+    color: $white;
+  }
+}
