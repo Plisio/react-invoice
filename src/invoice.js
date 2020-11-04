@@ -91,7 +91,7 @@ const Invoice = ({ preLoading, invoice, cancelFetch }) => {
             // overpaid
             } else if (isOverpaid) {
               return <InvoiceStepResult
-                customClass="step_overpaid"
+                customClassName="step_overpaid"
                 icon="icon_overpaid"
                 title="The order has been overpaid"
                 hint={`You have payed
@@ -105,7 +105,7 @@ const Invoice = ({ preLoading, invoice, cancelFetch }) => {
             // finished
             } else if (isFinished) {
               return <InvoiceStepResult
-                customClass="step_completed"
+                customClassName="step_completed"
                 icon="icon_check"
                 title="Payment complete"
                 txUrl={invoice.txUrl}
@@ -114,7 +114,7 @@ const Invoice = ({ preLoading, invoice, cancelFetch }) => {
             // underpaid
             } else if (isUnderpaid) {
               return <InvoiceStepResult
-                customClass="step_underpaid"
+                customClassName="step_underpaid"
                 icon="icon_expired"
                 title="The order has not been fully paid"
               >
@@ -128,21 +128,21 @@ const Invoice = ({ preLoading, invoice, cancelFetch }) => {
             // expired
             } else if (isExpired) {
               return <InvoiceStepResult
-                customClass="step_expired"
+                customClassName="step_expired"
                 icon="icon_expired"
                 title="This order has expired"
               />
 
-            // error
+              // error
             } else if (isError) {
               return <InvoiceStepResult
-                customClass="step_error"
+                customClassName="step_error"
                 icon="icon_exclamation"
                 title="Ooops..."
                 hint="Something went wrong with this operation. Please, contact support, so we could figure this out."
               />
 
-            // loading
+              // loading
             } else {
               return <InvoiceStepLoading />
             }
