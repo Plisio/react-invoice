@@ -16,7 +16,26 @@ npm install @plisio/react-invoice
 | `cancelFetch` | Function | function () {} | Callback function that discards fetching data interval |
 
 
-Create react white-label Plisio invoice. Css file is extracted to separate file, so you could include it manually or customize the styles yourself.
+## Slots (react-children)
+If you are not satisfied with the display of any component, you can redefine it via slots (react-children):
+
+| Slot name | Description |
+| ----- | ----------- |
+| `iconSprite` | Invoice icon sprite. Uses own by default. |
+| `invoiceHeader` | Invoice header. Uses own by default. |
+| `invoiceFooter` | Invoice footer. Is ```null``` by default. |
+| `stepPay` | Invoice step-pay. Uses own by default. |
+| `stepPending` | Invoice step-pending. Uses own by default. |
+| `stepPending` | Invoice step-pending. Uses own by default. |
+| `stepOverpaid` | Invoice step-overpaid. Uses own by default. |
+| `stepCompleted` | Invoice step-completed. Uses own by default. |
+| `stepUnderpaid` | Invoice step-underpaid. Uses own by default. |
+| `stepExpired` | Invoice step-expired. Uses own by default. |
+| `stepError` | Invoice step-error. Uses own by default. |
+| `stepLoading` | Invoice step-loading. Uses own by default. |
+
+
+Create react white-label Plisio invoice. Css file has been extracted to separate file, so you could include it manually or customize the styles yourself.
 
 ```
 import React, { useState, useEffect, useRef } from 'react'
