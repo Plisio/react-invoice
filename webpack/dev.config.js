@@ -15,7 +15,9 @@ module.exports = {
   devtool: 'inline-source-map',
 
   devServer: {
-    port: 3002
+    port: 3002,
+    open: true,
+    openPage: '?invoice_id=1'
   },
 
   entry: path.join(__dirname, '../examples/src/index.js'),

@@ -63,10 +63,10 @@ const App = () => {
       cancelFetch={ cancelFetch }
     >
       {{
-        stepLoading: (<h1 style={{textAlign: 'center'}}>Loading... {invoice.amount}</h1>),
+        stepLoading: (<h1 style={{textAlign: 'center'}}>This an example of custom loading-step... {invoice.amount}</h1>),
         stepUnderpaid: (
           <div className="invoice_step step_underpaid" style={{textAlign: 'center'}}>
-            <h2>Underpaid!</h2>
+            <h2>This is an example of custom underpaid-step!</h2>
             <p>{` We received
               ${Number(invoice.amount - invoice.pending_amount).toFixed(8)} ${invoice.currency}
               of ${ invoice.amount } ${ invoice.currency } required.`}</p>

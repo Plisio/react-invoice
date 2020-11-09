@@ -1,6 +1,6 @@
 {
   "name": "@plisio/react-invoice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "main": "dist/index.js",
   "module": "src/index.js",
@@ -30,8 +30,8 @@
     "css-loader": "^5.0.0",
     "html-webpack-plugin": "^4.5.0",
     "mini-css-extract-plugin": "^1.2.1",
-    "style-loader": "^2.0.0",
     "sass-loader": "^10.0.4",
+    "style-loader": "^2.0.0",
     "webpack": "^5.3.0",
     "webpack-cli": "^4.1.0",
     "webpack-dev-server": "^3.11.0"
